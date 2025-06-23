@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate | WiSE Women in STEM</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><i class="fas fa-atom"></i>WiSE Women in STEM</a>
+      <ul class="nav-links">
+     <li><a href="index.html#about">About Us</a></li>
+<li><a href="index.html#team">Team</a></li>
+<li><a href="index.html#calendar">Calendar</a></li>
+<li><a href="donate.html">Donate</a></li>
+
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Donate Section -->
+  <section class="donate-section">
+    <div class="donate-container">
+      <h1 class="fade-in">SUPPORT WISE WOMEN IN STEM</h1>
+      <p class="fade-in">Your support helps us empower women in Science, Technology, Engineering, and Mathematics.</p>
+
+      <div class="contact-info fade-in">
+        <h2>Donation Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:user@gmail.com">user@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+      </div>
+
+      <div class="paypal-info fade-in">
+        <h2>PayPal</h2>
+        <p>Send your donations via PayPal to:</p>
+        <p><strong>PayPal Email:</strong> <a href="mailto:user@gmail.com">user@gmail.com</a></p>
+        <div class="paypal-icon">
+          <i class="fab fa-paypal"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ JavaScript for Navbar Scroll + Burger Menu -->
+  <script>
+    // Add 'scrolled' class on navbar when scrolling
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Burger menu toggle
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+    });
+  </script>
+
+</body>
+</html>
